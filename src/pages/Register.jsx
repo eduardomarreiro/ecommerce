@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { mobile } from "../responsive";
 
 const Conteiner = styled.div`
   width: 100vw;
@@ -7,8 +8,7 @@ const Conteiner = styled.div`
       rgba(255, 255, 255, 0.5),
       rgba(255, 255, 255, 0.5)
     ),
-    url("https://wallpaperaccess.com/full/1078692.jpg")
-      center;
+    url("https://wallpaperaccess.com/full/1078692.jpg") center;
   background-size: cover;
   display: flex;
   align-items: center;
@@ -19,6 +19,7 @@ const Wrapper = styled.div`
   width: 29%;
   padding: 20px;
   background-color: white;
+  ${mobile({ width: "68%" })}
 `;
 
 const Title = styled.h1`
